@@ -18,7 +18,7 @@ unicorn_count = 0
 zebhor_count = 0
 donkey_count = 0
 
-for item in range(1,HOW_MUCH):
+for item in range(0,HOW_MUCH):
 
     chosen = random.choice(tokens)
 
@@ -31,7 +31,14 @@ for item in range(1,HOW_MUCH):
 
     print(chosen)
 
+# Money Calculations
+winnings = unicorn_count * 5 + zebhor_count * 0.5
+
 print("Win / Loss Calculations")
 print("# Unicorns: {}".format(unicorn_count))
 print("# Zebra / Horses: {}".format(zebhor_count))
 print("# Donkeys: {}".format(donkey_count))
+
+print()
+print("You spent ${}".format(HOW_MUCH))
+print("You go home with ${}".format(winnings))
