@@ -15,7 +15,7 @@ total = 10
 # Assume manual token input for testing purposes
 token = input("Enter a token: ")
 
-#Adjust correctly for a given token
+# Adjust correctly for a given token
 if token == "unicorn":
     total += 5
     feedback = "Congratulations, you got a lucky unicorn and have won $5.00!"

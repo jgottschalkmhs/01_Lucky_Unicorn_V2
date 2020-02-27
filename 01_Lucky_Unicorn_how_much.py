@@ -9,6 +9,7 @@ def intcheck(question, low, high):
                 "and {}".format(low, high)
 
         try:
+
             response = int(input("Enter an integer between {} "
                                  "and {}: ".format(low,high)))
 
@@ -21,6 +22,6 @@ def intcheck(question, low, high):
         except ValueError:
             print(error)
 
-# main routine goes here
+# Main routine
 
 how_much = intcheck("How much money do you want to play with?", 1, 10)

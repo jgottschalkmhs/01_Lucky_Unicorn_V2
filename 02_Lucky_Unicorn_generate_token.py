@@ -3,7 +3,9 @@
 
 import random
 
-tokens = ["unicorn", "donkey", "donkey", "donkey", "horse", "horse", "horse", "zebra", "zebra", "zebra"]
+tokens = ["unicorn", "donkey", "donkey", "donkey",
+          "horse", "horse", "horse",
+          "zebra", "zebra", "zebra"]
 
 for item in range(1,15):
 

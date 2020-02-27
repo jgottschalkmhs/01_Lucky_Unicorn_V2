@@ -1,7 +1,7 @@
 # Lucky Unicorn Decomposition Step 3
 # Generate a random token
 
-#To do
+# To do
 # Set up starting amount
 # Choose 100 tokens (eg: play 100 rounds and
 #   count number of unicorns and multiply by 5
