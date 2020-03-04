@@ -22,9 +22,10 @@ def intcheck(question, low, high):
 # Function to print out token statements and apply stars lines or arrows to statement
 def token_statement(statement, char):
     print()
-    print(char*len(statement))
+    print(char*len())
     print(statement)
     print()
+
 # Main routine
 
 # Introductions / Rules
