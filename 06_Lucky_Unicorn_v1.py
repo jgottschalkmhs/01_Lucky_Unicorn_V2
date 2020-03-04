@@ -22,10 +22,11 @@ def intcheck(question, low, high):
 # function to print out token statements and applies decorations to top and bottom
 def token_statement(statement, char):
     print()
-    print(char*len(statement))
+    print(char * len(statement))
     print(statement)
-    print(char*len(statement))
+    print(char * len(statement))
     print()
+
 
 # Main routine
 
@@ -55,7 +56,7 @@ while keep_going == "":
         token_statement("|| Sorry, you did not win anything this round ||", "-")
     else:
         balance -= 0.5    # 'wins' 50c, paid $1 so loses 50c
-        token_statement("<< Congratulations, you won 50¢! >>", "^")
+        token_statement("Congratulations, you won 50¢! >>", "^")
     print()
     if balance < 1:
         print()

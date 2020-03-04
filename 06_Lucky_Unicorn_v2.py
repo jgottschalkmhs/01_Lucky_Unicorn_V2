@@ -19,11 +19,12 @@ def intcheck(question, low, high):
         except ValueError:
             print(error)
 
-# Function to print out token statements and apply stars lines or arrows to statement
+# function to print out token statements and applies decorations to top and bottom
 def token_statement(statement, char):
     print()
-    print(char*len())
+    print(char*len(statement))
     print(statement)
+    print(char*len(statement))
     print()
 
 # Main routine
@@ -62,20 +63,21 @@ while keep_going == "":
 
     # Adjust balance based on the chosen token and generate feedback
     if token == "unicorn":
-        # prints unicorn statement
         balance += 5    # wins $5
-        feedback = "***** Congratulations, you got a lucky unicorn and have won $5.00! *****"
+        token_statement("***** Congratulations, you got a lucky unicorn and have won $5.00! *****", "*")
     elif token == "donkey":
-        # prints donkey statement
         balance -= 1    # does not win anything (ie: loses $1)
-        feedback = "|| Sorry, you did not win anything this round ||"
+        token_statement("|| Sorry, you did not win anything this round ||", "-")
     else:
-        # prints zebra / horse statement
         balance -= 0.5    # 'wins' 50c, paid $1 so loses 50c
-        feedback = "<< Congratulations, you won 50¢ >>!"
-
+        token_statement("<< Congratulations, you won 50¢! >>", "^")
     print()
-    print(feedback)
+    if balance < 1:
+        print()
+    else:
+        print("You have ${:.2f} to play with".format(balance))
+        print()
+
     if balance < 1:
         print()
     else:
