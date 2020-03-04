@@ -1,6 +1,6 @@
 # Lucky Unicorn Fully Working Program
 # Program should work - needs to be tested for usability
-
+# v2 Made statements easier to view and made an intro / rules
 import random
 
 # Integer checking function below
@@ -19,10 +19,32 @@ def intcheck(question, low, high):
         except ValueError:
             print(error)
 
+# Function to print out token statements and apply stars lines or arrows to statement
+def token_statement(statement, char):
+    print()
+    print(char*len(statement))
+    print(statement)
+    print()
 # Main routine
+
+# Introductions / Rules
+
+print("***** Welcome to the Lucky Unicorn Game *****")
+print()
+print("To play, enter the amount of money between $1 and $10 (dollars only, no cents)")
+print()
+print("The cost is $1 per round")
+print()
+print("* Payouts *")
+print("Unicorn: $5")
+print("Donkey: $0")
+print("Zebra and Horses: 50¢")
+print()
 
 # Ask user how much they want to play with (minimum $1, maximum $10)
 balance = intcheck("How much money would you like to play with? ", 1, 10)
+
+print("||||| Game In Progress |||||")
 
 keep_going = ""
 while keep_going == "":
@@ -39,14 +61,17 @@ while keep_going == "":
 
     # Adjust balance based on the chosen token and generate feedback
     if token == "unicorn":
+        # prints unicorn statement
         balance += 5    # wins $5
-        feedback = "Congratulations, you got a lucky unicorn and have won $5.00!"
+        feedback = "***** Congratulations, you got a lucky unicorn and have won $5.00! *****"
     elif token == "donkey":
+        # prints donkey statement
         balance -= 1    # does not win anything (ie: loses $1)
-        feedback = "Sorry, you did not win anything this round"
+        feedback = "|| Sorry, you did not win anything this round ||"
     else:
+        # prints zebra / horse statement
         balance -= 0.5    # 'wins' 50c, paid $1 so loses 50c
-        feedback = "Congratulations, you won 50¢!"
+        feedback = "<< Congratulations, you won 50¢ >>!"
 
     print()
     print(feedback)

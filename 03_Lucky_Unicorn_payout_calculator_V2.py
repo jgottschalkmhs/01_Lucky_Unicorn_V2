@@ -36,7 +36,7 @@ for item in range(0,HOW_MUCH):
 # Money Calculations
 winnings = unicorn_count * 5 + zebhor_count * 0.5
 
-print("Win / Loss Calculations")
+print("*****Win / Loss Calculations*****")
 print("# Unicorns: {}".format(unicorn_count))
 print("# Zebra / Horses: {}".format(zebhor_count))
 print("# Donkeys: {}".format(donkey_count))
