@@ -78,12 +78,6 @@ while keep_going == "":
         print("You have ${:.2f} to play with".format(balance))
         print()
 
-    if balance < 1:
-        print()
-    else:
-        print("You have ${:.2f} to play with".format(balance))
-        print()
-
     # If user has enough money to play, ask if they want to play again
     if balance < 1:
             print("Sorry, you don't have enough money to continue. Game Over")

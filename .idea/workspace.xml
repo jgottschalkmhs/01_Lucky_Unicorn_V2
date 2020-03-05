@@ -93,8 +93,8 @@
       <file leaf-file-name="06_Lucky_Unicorn_v2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/06_Lucky_Unicorn_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="606">
+              <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/Lucky_Unicorn_v1.py" />
         <option value="$PROJECT_DIR$/01_Lucky_Unicorn_how_much.py" />
         <option value="$PROJECT_DIR$/03_Lucky_Unicorn_payout_calculator_V2.py" />
-        <option value="$PROJECT_DIR$/06_Lucky_Unicorn_v2.py" />
         <option value="$PROJECT_DIR$/06_Lucky_Unicorn_v1.py" />
+        <option value="$PROJECT_DIR$/06_Lucky_Unicorn_v2.py" />
       </list>
     </option>
   </component>
@@ -197,8 +197,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -889,8 +889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/06_Lucky_Unicorn_v2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="606">
+          <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
           <folding />
         </state>
       </provider>
